@@ -5,7 +5,7 @@ import renderWithRouter from '../renderWithRouter';
 describe('testes no componente About', () => {
   it('testa se tá na About', () => {
     renderWithRouter(<About />);
-    const aboutPageText = screen.getByRole('heading', { name: 'About Pokédex'});
+    const aboutPageText = screen.getByRole('heading', { name: 'About Pokédex' });
     expect(aboutPageText).toBeInTheDocument();
   });
   it('testa se tem 1 tag p no About', () => {
