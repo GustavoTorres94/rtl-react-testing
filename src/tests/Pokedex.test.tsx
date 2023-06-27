@@ -3,7 +3,6 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from '../renderWithRouter';
 
-
 describe('testes no componente Pokedex', () => {
   it('testa se tá na Pokedex/Home', () => {
     renderWithRouter(<App />);
