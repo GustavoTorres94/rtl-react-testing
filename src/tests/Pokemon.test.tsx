@@ -24,7 +24,7 @@ describe('testes no componente Pokemon', () => {
     renderWithRouter(<App />);
     const pokemonLink = screen.getByRole('link', { name: /more details/i });
     expect(pokemonLink).toBeInTheDocument();
-    expect(pokemonLink).toHaveAttribute('href', `/pokemon/${id}`); 
+    expect(pokemonLink).toHaveAttribute('href', `/pokemon/${id}`);
     await userEvent.click(pokemonLink);
     const pokemonDetails = screen.getByRole('heading', { name: /pikachu details/i });
     expect(pokemonDetails).toBeInTheDocument();
@@ -33,7 +33,7 @@ describe('testes no componente Pokemon', () => {
     renderWithRouter(<App />);
     const pokemonLink = screen.getByRole('link', { name: /more details/i });
     expect(pokemonLink).toBeInTheDocument();
-    expect(pokemonLink).toHaveAttribute('href', '/pokemon/25'); 
+    expect(pokemonLink).toHaveAttribute('href', '/pokemon/25');
     await userEvent.click(pokemonLink);
     const pokemonDetails = screen.getByRole('heading', { name: /pikachu details/i });
     expect(pokemonDetails).toBeInTheDocument();
