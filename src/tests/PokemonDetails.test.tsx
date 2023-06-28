@@ -4,7 +4,7 @@ import App from '../App';
 import renderWithRouter from '../renderWithRouter';
 import pokemonList from '../data';
 
-const { name, averageWeight, foundAt } = pokemonList[0];
+const { name, foundAt } = pokemonList[0];
 
 describe('testes no componente PokemonDetails', () => {
   it('teste de informações do component PomenonDetails', async () => {
@@ -33,7 +33,7 @@ describe('testes no componente PokemonDetails', () => {
       const mapImage = screen.getAllByAltText(`${name} location`)[i];
       expect(mapImage).toBeInTheDocument();
       expect(mapImage).toHaveAttribute('src', `${e.map}`);
-      return;
+      return null;
     });
   });
   it('testa se user pode favoritar a partir do component', async () => {
